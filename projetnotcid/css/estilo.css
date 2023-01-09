@@ -1,0 +1,370 @@
+/* estrutura do site */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #fff url(../image/imagens/fundo.png) repeat-x;
+
+}
+
+#container{
+
+    width: 750px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+
+}
+
+#topo{
+
+    height: 150px;
+    background: url(../image/imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+
+}
+
+.logo{
+
+    width: 152px;
+    height: 66px;
+    background: url(../image/imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+
+}
+
+/* barra de navegação */
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+#topo ul{
+
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+
+
+}
+
+#topo li{
+
+    float: left;
+
+}
+
+#topo ul a{
+
+font-weight: 900;
+font-size: 0.9em;
+display: block;
+padding: 0.5em 1.2em;
+line-height: 2em;
+text-decoration: none;
+color: #fff;
+background: url(../image/imagens/divisor.png) no-repeat left center ;
+
+}
+
+#topo ul .primeiro a{
+
+    background: none;
+
+}
+
+#topo ul a:hover{
+
+    color: #69001d;
+
+}
+
+/* selecionado da barra horizontal do topo*/
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+
+}
+
+/* fim selecionado */
+
+/* estruturação do layout */
+
+#conteudo {
+
+    background: #f5f5f5;
+    margin-top: 60px;
+
+}
+
+#lateral{
+
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+
+}
+
+#primario{
+
+    width:270px;
+    float: left;
+    margin: 0 0 20px 195px;
+
+}
+
+#uma-coluna #primario{
+
+    width:750px;
+    float: left;
+    margin: 0 0 20px 0px;
+
+}
+
+#duas-colunas #primario{
+
+    width:555px;
+    margin: 0 0 20px 195px;
+
+}
+
+#secundario{
+
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+
+}
+
+/* formataçao de imagem */
+
+img.imagem-principal{
+
+    width: 98%;
+    border: 3px solid #dfdfdf;
+
+}
+
+/* fim formataçao de imagem */
+
+/* cabeçalhos */
+
+h3 {
+
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+
+}
+
+.destaque h3{
+
+    background: #b10333;
+    color: #fff;
+
+}
+
+.entrevista h3{
+
+    background: #b10333;
+    color: black;
+
+}
+
+/* fim cabeçalhos */
+
+/* lista noticias */
+
+#lista-noticias li {
+
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+
+}
+
+li#essa-nao {
+
+    border-bottom: none;
+
+}
+
+#lista-noticias li a img{
+
+    float: left;
+    margin: 5px;
+
+}
+
+#lista-noticias li a{
+
+    text-decoration: none;
+    font-size: 0.89em;
+
+}
+
+#lista-noticias li a h3{
+
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+
+}
+
+#lista-noticias li p{
+
+    font-size: 0.8em;
+
+}
+
+#lista-noticias li:hover{
+
+    background: #eee;
+    cursor: pointer;
+    
+
+}
+
+/* fim lista noticias */
+
+/* rodape */
+
+#container-rodape{
+
+    background: #294c71;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 900;
+
+
+}
+
+#rodape {
+
+
+    width: 750px;
+    margin: 0 500px;
+    color: #fff;
+
+}
+
+/* fim rodape */
+
+/* design da CAIXA */
+
+.caixa {
+
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(../image/imagens/fundo-caixa.png);
+
+
+}
+
+.caixa h2 {
+
+    line-height: 35px;
+    font-size: 1em;
+    padding: 5px;
+    background: #293c71;
+    color: #fff;
+}
+
+.caixa-conteudo{
+
+background: #fff;
+padding: 5px;
+margin-top: 5px;
+
+}
+
+/* fim CAIXA */
+
+/* conteudo lateral */
+
+/* inicio lista lateral*/
+
+.lista-lateral {
+
+    padding: 10px 0;
+
+}
+
+.lista-lateral li{
+
+    padding: 5px;
+
+}
+
+.lista-lateral a{
+
+    line-height: 30px;
+    display: block;
+    background: white;
+    text-decoration: underline rgb(202, 202, 202);
+    font-weight: 600;
+    color: black;
+
+}
+.lista-lateral a:hover{
+
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    padding-left: 25px;
+    background: rgb(240, 240, 240) url(../image/imagens/marcador.png) no-repeat left center;
+
+}
+
+/* fim lista lateral */
+
+/* inicio form lateral */
+
+label {
+
+    display: block;
+    cursor: pointer;
+
+}
+
+input{
+
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+
+}
+
+input.submit{
+
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+
+}
+
+/* fim form lateral */
+
+/* fim conteudo lateral */
+
